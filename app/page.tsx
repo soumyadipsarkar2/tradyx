@@ -304,29 +304,27 @@ export default function TradyXLanding() {
         </div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto">
-          <FloatingElement>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5, rotate: -180 }}
-              animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ duration: 1.2, ease: "easeOut" }}
-              className="mb-8"
-            >
-              <div className="relative">
-                <motion.div
-                  className="absolute inset-0 bg-emerald-400/20 rounded-full blur-3xl"
-                  animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
-                  transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                />
-                <Image
-                  src="/images/logo.png"
-                  alt="TRADY X Logo"
-                  width={200}
-                  height={200}
-                  className="relative z-10 mx-auto mb-8 drop-shadow-2xl"
-                />
-              </div>
-            </motion.div>
-          </FloatingElement>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, rotate: -180 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="mb-8"
+          >
+            <div className="relative">
+              <motion.div
+                className="absolute inset-0 bg-emerald-400/20 rounded-full blur-3xl"
+                animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
+                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+              />
+              <Image
+                src="/images/logo.png"
+                alt="TRADY X Logo"
+                width={200}
+                height={200}
+                className="relative z-10 mx-auto mb-8 drop-shadow-2xl"
+              />
+            </div>
+          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -680,9 +678,7 @@ export default function TradyXLanding() {
               viewport={{ once: true }}
             >
               <div className="flex items-center justify-center mb-6">
-                <FloatingElement delay={0}>
-                  <Image src="/images/logo.png" alt="TRADY X" width={100} height={80} className="w-25 h-25" />
-                </FloatingElement>
+                <Image src="/images/logo.png" alt="TRADY X" width={100} height={80} className="w-25 h-25" />
               </div>
               <p className="text-gray-400">Empowering your financial future through innovative crypto solutions.</p>
             </motion.div>
